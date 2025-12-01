@@ -12,4 +12,9 @@ public class Passenger extends Person {
     public String getPassportId() {
         return passportId;
     }
+
+    // Setter
+    public void setPassportId(String passportId) {
+        this.passportId = passportId;
+    }
 }

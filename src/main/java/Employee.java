@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Employee extends Person {
+public abstract class Employee extends Person {
     // Fields
     private String employeeId;
     private LocalDate dateOfHire;
@@ -16,14 +16,18 @@ public class Employee extends Person {
     public String getEmployeeId() {
         return employeeId;
     }
+
     public LocalDate getDateOfHire() {
         return dateOfHire;
     }
+
+    public abstract String getRole();
 
     // Setters
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
     }
+
     public void setDateOfHire(LocalDate dateOfHire) {
         this.dateOfHire = dateOfHire;
     }

@@ -14,29 +14,44 @@ public class Person {
     }
 
     // Getters
-    public String getID() {
+    public String getId() {
         return id;
     }
+
     public String getName() {
         return name;
     }
+
     public String getAddress() {
         return address;
     }
+
     public String getContact() {
         return contact;
+    }
+
+    public String getInfo() {
+        return """
+               ID:      %s
+               Name:     %s
+               Address: %s
+               Contact: %s
+               """.formatted(id, name, address, contact);
     }
 
     // Setters
     public void setId(String id) {
         this.id = id;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public void setAddress(String address) {
         this.address = address;
     }
+
     public void setContact(String contact) {
         this.contact = contact;
     }

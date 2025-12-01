@@ -15,6 +15,11 @@ public class FlightAttendant extends Employee {
         return  qualification;
     }
 
+    @Override
+    public String getRole() {
+        return "Flight Attendant";
+    }
+
     // Setter
     public void setQualification(String qualification) {
         this.qualification = qualification;

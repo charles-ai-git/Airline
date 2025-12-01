@@ -17,8 +17,14 @@ public class Pilot extends Employee {
     public String getLicense() {
         return license;
     }
+
     public Duration getFlightTime() {
         return flightTime;
+    }
+
+    @Override
+    public String getRole() {
+        return "Pilot";
     }
 
     // Setters
