@@ -1,11 +1,11 @@
-public class Plane {
+public class Aircraft {
     // Fields
     private String aircraftRegistration;
     private String model;
     private int capacity;
 
     // Constructor
-    public Plane(String aircraftRegistration, String model, int capacity) {
+    public Aircraft(String aircraftRegistration, String model, int capacity) {
         this.aircraftRegistration = aircraftRegistration;
         this.model = model;
         this.capacity = capacity;

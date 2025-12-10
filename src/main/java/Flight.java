@@ -4,17 +4,17 @@ import java.time.LocalDateTime;
 public class Flight {
     // Fields
     private String flightNumber;
-    private Plane plane;
-    private String departureLocation;
-    private String destinationLocation;
+    private Aircraft aircraft;
+    private Airport departureLocation;
+    private Airport destinationLocation;
     private LocalDateTime departureTime;
     private LocalDateTime arrivalTime;
     private String status;
 
     // Constructor
-    public Flight(String flightNumber, Plane plane, String departureLocation, String destinationLocation, LocalDateTime departureTime, LocalDateTime arrivalTime, String status) {
+    public Flight(String flightNumber, Aircraft aircraft, Airport departureLocation, Airport destinationLocation, LocalDateTime departureTime, LocalDateTime arrivalTime, String status) {
         this.flightNumber = flightNumber;
-        this.plane = plane;
+        this.aircraft = aircraft;
         this.departureLocation = departureLocation;
         this.destinationLocation = destinationLocation;
         this.departureTime = departureTime;
@@ -27,15 +27,15 @@ public class Flight {
         return flightNumber;
     }
 
-    public Plane getPlane() {
-        return plane;
+    public Aircraft getAircraft() {
+        return aircraft;
     }
 
-    public String getDepartureLocation() {
+    public Airport getDepartureLocation() {
         return departureLocation;
     }
 
-    public String getDestinationLocation() {
+    public Airport getDestinationLocation() {
         return destinationLocation;
     }
 
@@ -57,15 +57,15 @@ public class Flight {
         this.flightNumber = flightNumber;
     }
 
-    public void setPlane(Plane plane) {
-        this.plane = plane;
+    public void setPlane(Aircraft aircraft) {
+        this.aircraft = aircraft;
     }
 
-    public void setDepartureLocation(String departureLocation) {
+    public void setDepartureLocation(Airport departureLocation) {
         this.departureLocation = departureLocation;
     }
 
-    public void setDestinationLocation(String destinationLocation) {
+    public void setDestinationLocation(Airport destinationLocation) {
         this.destinationLocation = destinationLocation;
     }
 
